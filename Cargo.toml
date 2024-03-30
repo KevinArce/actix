@@ -1,0 +1,14 @@
+[package]
+name = "actix"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.5.1"
+apistos = { version = "0.1.7", features = ["extras", "qs_query"] }
+serde = { version = "1.0.197", features = ["derive"] }
+uuid = { version = "1.8.0", features = ["serde", "v4"] }
+schemars = { package = "apistos-schemars", version = "0.8.16", features = ["chrono", "uuid1", "url", "rust_decimal"] }
+
